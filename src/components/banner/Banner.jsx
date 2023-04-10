@@ -9,8 +9,8 @@ const Banner = () => {
                 <div className="banner-container row align-items-center">
                     <div className="banner-text col-md-6">
                         <h1 className="fw-bolder w-75">
-                            One Step Closer To Your{" "}
-                            <span className="text-primary">Dream Job</span>
+                            Make your identity from{" "}
+                            <span className="text-primary">Developer's BattleField</span>
                         </h1>
                         <p className="w-75">
                             Explore thousands of job opportunities with all the
