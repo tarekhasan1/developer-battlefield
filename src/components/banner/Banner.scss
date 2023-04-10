@@ -1,0 +1,20 @@
+.banner-sec {
+    background-color: #f9f9ff;
+}
+.banner-container .banner-text .text-primary {
+    color: #7e90fe !important;
+}
+
+@media only screen and (max-width: 768px) {
+    .banner-sec {
+        padding-bottom: 20px;
+    }
+    .banner-container.row {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .banner-container .banner-text h1,
+    .banner-container .banner-text p {
+        width: 100% !important;
+    }
+}
