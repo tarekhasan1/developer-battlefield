@@ -1,9 +1,10 @@
 import './App.css'
+import Header from './routes/components/Header'
 
 function App() {
   return (
     <div className="App">
-    <h1>Developer's BattleField</h1>
+    <Header/>
     </div>
   )
 }
