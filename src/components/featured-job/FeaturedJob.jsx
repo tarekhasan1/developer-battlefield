@@ -43,7 +43,7 @@ const FeaturedJob = () => {
                     Array.isArray(showFeatures) &&
                     showFeatures.length > 0 &&
                     showFeatures.map((data, index) => (
-                        <div key={index} className="job-card">
+                        <div key={index} className="feature-job-card">
                             <img className="card-img" src={data.logo} alt="" />
                             <h5 className="fw-semibold">{data.job_title}</h5>
                             <p className="text-muted fs-6">

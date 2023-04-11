@@ -3,27 +3,27 @@
     grid-template-columns: repeat(2, 1fr);
     row-gap: 20px;
     column-gap: 20px;
+}
 
-    .job-card {
-        border: 1px solid rgba(0, 0, 0, 0.1);
-        border-radius: 5px;
-        padding: 20px;
+.feature-job-card {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 20px;
 
-        .card-img {
-            width: 116px;
-            height: 40px;
-            margin-bottom: 20px;
-        }
+    .card-img {
+        width: 116px;
+        height: 40px;
+        margin-bottom: 20px;
+    }
 
-        .click-button {
-            background-image: none;
-            color: #7e90fe;
-            border: 1px solid #7e90fe;
-            font-size: 16px;
-            margin-right: 20px;
-            &:hover {
-                color: #7ee0fe;
-            }
+    .click-button {
+        background-image: none;
+        color: #7e90fe;
+        border: 1px solid #7e90fe;
+        font-size: 16px;
+        margin-right: 20px;
+        &:hover {
+            color: #7ee0fe;
         }
     }
 }
