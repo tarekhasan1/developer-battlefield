@@ -9,6 +9,7 @@
     "time_type": "Full Time",
     "salary": "100-150k",
     "description": "We are seeking a results-oriented database engineer to help optimize the performance of our organization's databases. You will be enhancing our data storage capacity, writing new support programs and scripts, and troubleshooting database code. To ensure success as a database engineer, you should exhibit knowledge of best practices in database management and experience in a similar role. A top-notch database engineer will be someone whose database optimization skills translate into the efficient flow of information throughout an organization.",
+    "responsibility": "Administer and maintain database security, integrity, and optimization Develop and run periodic and requested reports  Develop new databases and applications Identify and resolve performance and capacity issues Establish and maintain backup and recovery processes Maintain associated non-referential data Manage user rights and permissions",
     "educational_Requirements": "Bachelor's degree in information systems, information technology, computer science, or similar.",
     "experiences": "A minimum of 2 years experience in database engineering.",
     "contact_information": {
@@ -27,6 +28,7 @@
     "time_type": "Full time",
     "salary": "150k-230k",
     "description": "The Netflix Design team is searching for a Sr Product Designer for our XD Streaming team. This role would focus on the innovation, experimentation, communication and results of our discovery initiatives to further iterate on our experiences with anticipation and launching of new titles. The person we are looking for should possess deep knowledge, and be known for: Expert in Merchandising: raising awareness of a product, increasing demand generation, hype and anticipation. Leading discovery projects while creating a quality member experience that moves our core metrics.Create new experiences that challenge known metrics and push our understanding of member experience.Leveraging best discovery, merchandising and search design practices. Work within known delivery systems or develop new ones. Working with a wide set of partners - PM, Eng, Algo, DSE and having a strong influence.",
+    "responsibility": "Creating user interface designs for applications, including the development of prototypes for testing with users Working with a team of designers to create new products or improve existing products based on research findings and consumer feedback Conducting usability studies to identify areas for improvement in existing products or to test new product concepts",
     "educational_Requirements": "Bachelor's degree in information systems, information technology, computer science, or similar.",
     "experiences": "A minimum of 4 years experience in product designing.",
     "contact_information": {
@@ -46,6 +48,7 @@
     "salary": "96k-336k",
     "description": "We are looking for a highly motivated mobile engineer specializing in creating exceptional user experiences for our users. You will need to demonstrate strong software engineering skills, excellent interpersonal communication, tenacity, extreme ownership, and the ability to accept and give meaningful technical feedback. You will be responsible for designing architecture, writing correct, robust code, maintaining and improving existing functionality, and shipping new features. You will collaborate with our design team as well as vehicle UI and back-end developers. Our team strives to set the bar for vehicle mobile user experience. We want to work with people who are excited by this goal and have the talent to deliver on it.",
     "educational_Requirements": "Bachelor’s Degree in Computer Science, Software Engineering, or similar areas of study.",
+    "responsibility": "Execute full software development life cycle (SDLC) Develop flowcharts, layouts and documentation to identify requirements and solutions Write well-designed, testable code Produce specifications and determine operational feasibility Integrate software components into a fully functional software system",
     "experiences": " Minimum 2 years’ experience in Mobile (iOS/Android) development.",
     "contact_information": {
       "phone": "1-800 662 7232",
@@ -63,6 +66,7 @@
     "time_type": "Part Time",
     "salary": "120k-250k",
     "description": "We are seeking a Senior 3D Motion Graphics Designer to join the Media Production Division of the Communication Content & Channels Department. The Media Production Division is responsible for providing high-end video production, photography, archive and broadcast radio services that provide quality content for the communication needs of Saudi Aramco. The Senior 3D Motion Graphic Designer’s primary role is to work within the Media Production Audio Visual Unit, working independently and with assigned Production Directors to produce creative and engaging corporate animation sequences for events, social media and other corporate video needs.",
+    "responsibility": "Creating and delivering motion graphics for various media Working with art and creative teams to select audio, video, colors, animation, etc. for graphic design Editing video footage and adding effects/elements to enhance motion graphics Staying up to date on the latest graphic design techniques",
     "educational_Requirements": "Bachelor’s Degree in Computer Science, Software Engineering, or similar areas of study",
     "experiences": " Minimum 2 years’ experience in 3D Motion Graphics.",
     "contact_information": {
@@ -81,6 +85,7 @@
     "time_type": "Full Time",
     "salary": "122k-344k",
     "description": "We are looking for an experienced AWS Developer responsible for making our app more scalable and reliable. We are currently running our services on EC2 machines using Auto Scaling Groups, and are looking to containerize our application and migrate it to EKS {{ Or another AWS service such as ECS, Lambda, etc. }}. Currently, our monitoring is not working well, so you are going to be responsible for setting up a monitoring stack. Those metrics are also going to be used for service capacity planning. Our deployment model needs an update. It is currently not possible to do automatic rollbacks, and every time a new version is deployed to our production servers, we experience some short downtime. The current CI/CD pipeline is also not reliable, and we are looking to migrate to the AWS CI/CD stack.",
+    "responsibility": "Understand the current application infrastructure and suggest changes to it, Define and document best practices and strategies regarding plication deployment and infrastructure maintenance. Migrate our infrastructure with zero time to a highly available, scalable one. Set up a monitoring stack.Define service capacity planning strategies. Implement the application’s CI/CD pipeline using the AWS CI/CD stack. Write infrastructure as code using CloudFormation or similar.",
     "educational_Requirements": "Bachelor’s Degree in Computer Science, Software Engineering, or similar areas of study",
     "experiences": "Minimum 2 years’ experience in cloud computing.",
     "contact_information": {
@@ -99,6 +104,7 @@
     "time_type": "Part Time",
     "salary": "150k-360k",
     "description": "Azure is the fastest growing business in Microsoft’s history and is the foundation of Microsoft’s commercial Cloud Services. Azure differentiates itself as the only hyper-scale, enterprise-grade cloud with a true hybrid story. Customers and analysts recognize Azure’s tremendous momentum which continues month over month.  Microsoft Azure’s core priority is to be the world’s most trusted, secure, and global cloud and a great place for people to work. We are part of the Azure Networking team responsible for designing, building, and operating the most reliable cloud network in the world - Azure. We are looking for a passionate, high-energy individual to help build the network that powers the world’s largest online services. For this position, the candidate should be familiar with network protocols, network devices including network interface cards, switches, and routers. You should feel comfortable working with large-scale distributed systems, in managing the network infrastructure that supports the Azure Cloud infrastructure as well as in designing and building the large-scale distributed systems that manage the network.",
+    "responsibility": "Manage development of complex automation solutions to work with existing and new network technologies such as switches, routers, and firewalls.    Development, configuration, implementation, and testing of multiple network platforms to streamline network operations. Work with multiple Engineering teams to incorporate infrastructure provisioning into deployment pipelines. Design, deploy, and maintain network systems",
     "educational_Requirements": "Networking certification will be a plus.",
     "experiences": "Experience in one or more programming languages: C++, Java, Python, Perl.",
     "contact_information": {
