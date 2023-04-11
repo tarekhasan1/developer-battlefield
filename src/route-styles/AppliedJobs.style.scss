@@ -1,0 +1,51 @@
+.applied-job-sec .container #filter-btn {
+    background-color: #f4f4f4 !important;
+    border: none;
+    color: #000;
+    font-weight: 600;
+    padding: 6px 12px;
+}
+.applied-job-sec .container #filter-btn img {
+    width: 14px;
+    margin-left: 5px;
+}
+.applied-job-sec .container #applied-job .job-card {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    column-gap: 20px;
+
+    .img-container {
+        background-color: #f4f4f4;
+        width: 240px;
+        height: 240px;
+    }
+    .img-container img {
+        width: 145px;
+        height: 50px;
+    }
+}
+.applied-job-sec .feature-job-card {
+    border: 0;
+}
+
+@media screen and (max-width: 950px) {
+    .applied-job-sec .container #applied-job .job-card {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        column-gap: 20px;
+        row-gap: 20px;
+    }
+    .applied-job-sec .container #applied-job .job-card .btn-container {
+        grid-column: 1 / span 2;
+    }
+}
+@media screen and (max-width: 768px) {
+    .applied-job-sec .container #applied-job .job-card {
+        display: flex;
+        flex-direction: column;
+
+        .img-container {
+            margin: 0 auto;
+        }
+    }
+}

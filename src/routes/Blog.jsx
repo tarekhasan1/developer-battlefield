@@ -6,7 +6,7 @@ const Blog = () => {
     <div className="page-title">
                 <h2 className="text-center fw-bold">Some QnA</h2>
             </div>
-    <div className="container mt-5">
+    <div className="container mt-5 font-Helvetica">
     <h4>1. when should we use context api?</h4>
     <p><strong>Answer:</strong> Context API can solve many problems that modern applications face, related to state management. Many solutions can solve state management issues and props drilling, but they may increase your build size and compromise your app performance. Context API is a React built-in feature, so we don’t have to worry about performance overhead and library installing issues. 
     The props drilling problem occurs when you pass a prop somewhere down the tree. When a project develops, data passing through props becomes confusing, making the code more vulnerable and complex. To overcome from this problem, we use Context API.</p>

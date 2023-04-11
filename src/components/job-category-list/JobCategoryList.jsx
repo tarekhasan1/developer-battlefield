@@ -30,7 +30,7 @@ const JobCategoryList = () => {
                     categories.map((category, index) => (
                         <div key={index} className="category-card">
                             <img className="mb-3" src={category.logo} alt="" />
-                            <h5 className="fw-semibold">{category.name}</h5>
+                            <h5 className="fw-semibold mt-2">{category.name}</h5>
                             <p className="text-black-50">
                                 {category.job_available} Jobs Available
                             </p>
