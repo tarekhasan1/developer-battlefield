@@ -1,14 +1,11 @@
-.applied-job-sec .container #filter-btn {
+.applied-job-sec .container .filter-btn {
     background-color: #f4f4f4 !important;
     border: none;
     color: #000;
     font-weight: 600;
     padding: 6px 12px;
 }
-.applied-job-sec .container #filter-btn img {
-    width: 14px;
-    margin-left: 5px;
-}
+
 .applied-job-sec .container #applied-job .job-card {
     display: grid;
     grid-template-columns: auto 1fr auto;

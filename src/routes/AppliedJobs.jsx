@@ -7,15 +7,38 @@ import "../components/featured-job/Featured.style.scss";
 import "../route-styles/AppliedJobs.style.scss";
 
 const AppliedJobs = () => {
+    const [mainData, setMainData] = useState([]);
     const navigate = useNavigate();
     const [data, setData] = useState([]);
 
     useEffect(() => {
         const previousData = localStorage.getItem("jobData");
+        const jobData = JSON.parse(previousData);
         if (previousData) {
-            setData(JSON.parse(previousData));
+            setMainData(jobData);
+            setData(jobData);
         }
     }, []);
+
+        // see only remote handler
+        const seeRemoteJobs = () => {
+            if (Array.isArray(mainData) && mainData.length > 0) {
+                const remoteJobs = mainData.filter(
+                    (jobData) => String(jobData.job_type).toLowerCase() === "remote"
+                );
+                setData(remoteJobs);
+            }
+        };
+    
+        // see only on-site handler
+        const seeOnSiteJobs = () => {
+            if (Array.isArray(mainData) && mainData.length > 0) {
+                const OnsiteJobs = mainData.filter(
+                    (jobData) => String(jobData.job_type).toLowerCase() === "onsite"
+                );
+                setData(OnsiteJobs);
+            }
+        };
 
     return (
         <div className="applied-job-sec">
@@ -24,9 +47,18 @@ const AppliedJobs = () => {
             </div>
             <div className="container mt-5 mb-3">
                 <dir className="text-end">
-                    <button className="rounded" id="filter-btn">
-                        Filter By <img src={vector} alt="" />
-                    </button>
+                <button
+                onClick={seeRemoteJobs}
+                className="rounded me-3 filter-btn"
+            >
+                Show remote jobs
+            </button>
+            <button
+                onClick={seeOnSiteJobs}
+                className="rounded filter-btn"
+            >
+                show Onsite jobs
+            </button>
                 </dir>
                 <div id="applied-job">
                     {data &&

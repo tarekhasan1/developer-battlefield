@@ -1,5 +1,6 @@
 import { Outlet } from "react-router-dom";
 import "./App.scss";
+
 // components import
 import Header from "./components/header/Header";
 
