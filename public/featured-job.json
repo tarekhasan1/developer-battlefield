@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "logo": "https://github.com/HridoyShuvro/imagess/blob/main/google-1-1%201.png?raw=true",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/2560px-Google_2015_logo.svg.png",
     "job_title": "Technical Database Engineer",
     "company_name": "Google LLC",
     "job_type": "Remote",
@@ -20,7 +20,7 @@
 
   {
     "id": 2,
-    "logo": "https://github.com/HridoyShuvro/imagess/blob/main/netflix-4%201.png?raw=true",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Logonetflix.png",
     "job_title": "Senior Product Designer",
     "company_name": "Netflix",
     "job_type": "onsite",
@@ -39,7 +39,7 @@
 
   {
     "id": 3,
-    "logo": "https://github.com/HridoyShuvro/imagess/blob/main/tesla-9%201.png?raw=true",
+    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0hUffaLPqEj6iL-B5Xj7xI8Mk9vFeNn1JbA&usqp=CAU",
     "job_title": "Software Engineer",
     "company_name": "Tesla",
     "job_type": "onsite",
@@ -58,7 +58,7 @@
 
   {
     "id": 4,
-    "logo": "https://github.com/HridoyShuvro/imagess/blob/main/Group%2010021.png?raw=true",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Airbnb_Logo_B%C3%A9lo.svg/2560px-Airbnb_Logo_B%C3%A9lo.svg.png",
     "job_title": "Motion Graphic Designer",
     "company_name": "airbnb",
     "job_type": "onsite",
@@ -77,7 +77,7 @@
 
   {
     "id": 5,
-    "logo": "https://w7.pngwing.com/pngs/732/34/png-transparent-logo-amazon-com-brand-flipkart-others-text-orange-logo.png",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/2560px-Amazon_logo.svg.png",
     "job_title": "AWS Developer",
     "company_name": "Amazon",
     "job_type": "Remote",
@@ -96,7 +96,7 @@
 
   {
     "id": 6,
-    "logo": "https://w7.pngwing.com/pngs/803/515/png-transparent-microsoft-logo-organization-san-francisco-cloud-computing-partner-company-text-rectangle-thumbnail.png",
+    "logo": "https://logos-world.net/wp-content/uploads/2020/09/Microsoft-Logo-700x394.png",
     "job_title": "Senior Network Automation Engineer",
     "company_name": "Microsoft",
     "job_type": "Remote",

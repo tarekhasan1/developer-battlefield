@@ -49,9 +49,9 @@ const Statistics = () => {
     <div className="page-title">
                 <h2 className="text-center fw-bold">Assignment Statistics</h2>
             </div>
-    <div className="container mt-5">
+    <div className="container mt-5 overflow-auto">
     <AreaChart className="mx-auto"
-          width={1100}
+          width={1200}
           height={400}
           data={assignmentData}
         >
