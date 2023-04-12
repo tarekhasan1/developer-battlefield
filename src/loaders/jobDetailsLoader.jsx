@@ -1,6 +1,6 @@
 export const JobDetailsLoader = async ({ params }) => {
     try {
-        const response = await fetch("../../public/featured-job.json");
+        const response = await fetch("featured-job.json");
         const data = await response.json();
         // console.log(data);
         if (Array.isArray(data)) {
