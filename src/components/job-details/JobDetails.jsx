@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useLoaderData } from "react-router-dom";
 
 // import icon image
@@ -9,10 +9,24 @@ import salaryIcon from "../../assets/Icons/Frame.png";
 import addressIcon from "../../assets/Icons/Location Icon.png";
 
 const JobDetails = () => {
+    const [isApplied, setIsApplied] = useState(false);
     const { data } = useLoaderData();
+
+    useEffect(() => {
+        const previousData = localStorage.getItem("jobData");
+        if (previousData) {
+            const preData = JSON.parse(previousData);
+            const isExist = preData.find((jobData) => jobData.id === data.id);
+
+            if (isExist) {
+                setIsApplied(true);
+            }
+        }
+    }, []);
 
     // apply handler
     const applyHandler = (details) => {
+        setIsApplied(true);
         const {
             id,
             logo,
@@ -66,87 +80,85 @@ const JobDetails = () => {
             <div className="page-title">
                 <h2 className="text-center fw-bold">Job Details</h2>
             </div>
-            {!data && <h1 className="text-center">There is an error</h1>}
-            {data && (
-                <div className="container pb-5">
-                    <div className="row my-3">
-                        <div className=" col-md-8">
+            <div className="container pb-5">
+                <div className="row my-5">
+                    <div className=" col-md-8">
+                        <p>
+                            <strong>Job Description:</strong>
+                            {" " + data.description}
+                        </p>
+                        <p>
+                            <strong>Job Responsibility:</strong>
+                            {" " + data.responsibility}
+                        </p>
+                        <p>
+                            <strong>Educational Requirements:</strong>
+                            {" " + data.educational_Requirements}
+                        </p>
+                        <p>
+                            <strong>Experiences:</strong>
+                            {" " + data.experiences}
+                        </p>
+                    </div>
+                    <div className="col-md-4 mt-5 mt-md-0">
+                        <div
+                            className="rounded p-4 mb-4"
+                            style={{ backgroundColor: "#f9f9ff" }}
+                            id="details-container"
+                        >
+                            <h6 className="fw-bold">Job Details</h6>
+                            <hr />
                             <p>
-                                <strong>Job Description:</strong>
-                                {" " + data.description}
+                                <img src={salaryIcon} alt="" />
+                                <strong className="fw-semibold">Salary:</strong>
+                                {data.salary} (Per Month)
                             </p>
                             <p>
-                                <strong>Job Responsibility:</strong>
-                                {" " + data.responsibility}
+                                <img src={jobTitleIcon} alt="" />
+                                <strong className="fw-semibold">
+                                    Job Title:
+                                </strong>
+                                {data.job_title}
+                            </p>
+                            <h6 className="fw-bold mt-4">
+                                Contact information
+                            </h6>
+                            <hr />
+                            <p>
+                                <img src={phoneIcon} alt="" />
+                                <strong className="fw-semibold">Phone:</strong>
+                                {data.contact_information.phone}
                             </p>
                             <p>
-                                <strong>Educational Requirements:</strong>
-                                {" " + data.educational_Requirements}
+                                <img src={emailIcon} alt="" />
+                                <strong className="fw-semibold">Email:</strong>
+                                {data.contact_information.email}
                             </p>
-                            <p>
-                                <strong>Experiences:</strong>
-                                {" " + data.experiences}
+                            <p className="address">
+                                <img src={addressIcon} alt="" />{" "}
+                                <strong className="fw-semibold">
+                                    Address:
+                                </strong>
+                                {" " + data.location}
                             </p>
                         </div>
-                        <div className="col-md-4 mt-5 mt-md-0">
-                            <div
-                                className="rounded p-4 mb-4"
-                                style={{ backgroundColor: "#f9f9ff" }}
-                                id="details-container"
-                            >
-                                <h6 className="fw-bold">Job Details</h6>
-                                <hr />
-                                <p>
-                                    <img src={salaryIcon} alt="" />
-                                    <strong className="fw-semibold">
-                                        Salary:
-                                    </strong>
-                                    {data.salary} (Per Month)
-                                </p>
-                                <p>
-                                    <img src={jobTitleIcon} alt="" />
-                                    <strong className="fw-semibold">
-                                        Job Title:
-                                    </strong>
-                                    {data.job_title}
-                                </p>
-                                <h6 className="fw-bold mt-4">
-                                    Contact information
-                                </h6>
-                                <hr />
-                                <p>
-                                    <img src={phoneIcon} alt="" />
-                                    <strong className="fw-semibold">
-                                        Phone:
-                                    </strong>
-                                    {data.contact_information.phone}
-                                </p>
-                                <p>
-                                    <img src={emailIcon} alt="" />
-                                    <strong className="fw-semibold">
-                                        Email:
-                                    </strong>
-                                    {data.contact_information.email}
-                                </p>
-                                <p className="address">
-                                    <img src={addressIcon} alt="" />{" "}
-                                    <strong className="fw-semibold">
-                                        Address:
-                                    </strong>
-                                    {" " + data.location}
-                                </p>
-                            </div>
 
+                        {!isApplied && (
                             <button
                                 onClick={() => applyHandler(data)}
                                 className="btn w-100"
                             >
                                 Apply Now
                             </button>
-                        </div>
+                        )}
+                        {isApplied && (
+                            <button className="btn w-100 disabled border-0">
+                                Already Applied
+                            </button>
+                        )}
                     </div>
                 </div>
-            )}
+            </div>
         </div>
     );
 };

@@ -6,7 +6,7 @@ const Header = () => {
     <>
       <nav className="navbar navbar-expand-lg">
         <div className="container">
-          <a className="navbar-brand fw-bolder text-secondary">
+          <a className="navbar-brand fs-3 fw-bolder text-secondary">
             <span className="text-primary">D</span>eveloper's{" "}
             <span className="text-primary">B</span>attle
             <span className="text-primary">F</span>ield

@@ -14,8 +14,7 @@ const Banner = () => {
                         </h1>
                         <p className="w-75">
                             Explore thousands of job opportunities with all the
-                            information you need. Its your future. Come find it.
-                            Manage all your job application from start to
+                            information you need. Get yourself a good job among the best developer's all over the world. Manage all your job application from start to
                             finish.
                         </p>
                         <button className="btn">Get Started</button>
