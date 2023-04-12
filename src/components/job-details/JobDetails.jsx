@@ -69,7 +69,7 @@ const JobDetails = () => {
             {!data && <h1 className="text-center">There is an error</h1>}
             {data && (
                 <div className="container pb-5">
-                    <div className="row my-5">
+                    <div className="row my-3">
                         <div className=" col-md-8">
                             <p>
                                 <strong>Job Description:</strong>

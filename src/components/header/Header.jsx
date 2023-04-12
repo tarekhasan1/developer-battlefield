@@ -7,9 +7,9 @@ const Header = () => {
       <nav className="navbar navbar-expand-lg">
         <div className="container">
           <a className="navbar-brand fw-bolder text-secondary">
-            <span className="text-danger">D</span>eveloper's{" "}
-            <span className="text-danger">B</span>attle
-            <span className="text-danger">F</span>ield
+            <span className="text-primary">D</span>eveloper's{" "}
+            <span className="text-primary">B</span>attle
+            <span className="text-primary">F</span>ield
           </a>
           <button
             className="navbar-toggler"

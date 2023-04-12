@@ -1,9 +1,15 @@
 .applied-job-sec .container .filter-btn {
     background-color: #f4f4f4 !important;
-    border: none;
-    color: #000;
+    border: 1px solid gainsboro;
+    color: #74b9ff;
     font-weight: 600;
     padding: 6px 12px;
+}
+
+.applied-job-sec .container .filter-btn:hover {
+    scale: 1.01;
+    color: white;
+    background-color: #74b9ff !important;
 }
 
 .applied-job-sec .container #applied-job .job-card {
